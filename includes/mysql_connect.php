@@ -1,8 +1,11 @@
 <?php
 	//connect to DB
-	mysql_connect("localhost", "rstroud2", "pass19") or die(mysql_error());
+	//mysql_connect("localhost", "rstroud2", "pass19") or die(mysql_error());
+	mysql_connect("localhost", "root", "") or die(mysql_error());
+	
 	//select DB
-	mysql_select_db("rstroud2") or die(mysql_error());
+	//mysql_select_db("rstroud2") or die(mysql_error());
+	mysql_select_db("phpokedex") or die(mysql_error());
 	
 	//stop SQL injections in all POST vars
 	foreach($_POST as $key => $value)
