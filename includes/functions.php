@@ -1208,7 +1208,8 @@ function uploadImage()
 	
 	//directories to move files
 	$originalFolder = '../images/original/';
-	$aSquareDimensions = array(50, 96, 100, 125, 150, 240, 260, 290, 350, 500, 720);
+	//$aSquareDimensions = array(50, 96, 100, 125, 150, 240, 260, 290, 350, 500, 720);
+	$aSquareDimensions = array(96, 290);
 
 	//validation vars
 	$bValid = true;
@@ -1458,7 +1459,8 @@ function uploadImage2($imgName)
 	//directories to move files
 	$sugimoriFolder = 'images/sugimori/';
 	$originalFolder = 'images/original/';
-	$aSquareDimensions = array(50, 96, 100, 125, 150, 240, 260, 290, 350, 500, 720);
+	//$aSquareDimensions = array(50, 96, 100, 125, 150, 240, 260, 290, 350, 500, 720);
+	$aSquareDimensions = array(96, 290);
 
 	//validation vars
 	//if not uploaded successfully
