@@ -1,0 +1,465 @@
+/* *************************************************************
+	LAYOUT
+************************************************************* */
+body {
+	font-family: verdana;
+	background-color: #555;
+	margin-top: -4px;
+	padding-bottom: 40px;
+}
+#banner {
+	background-color: #ffd300;
+	padding: 5px;
+	border-radius: 5px;
+	clear: both;
+}
+#banner h1 {
+	color:#000;
+	font-family: Georgia, serif;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-shadow: 1px 1px 1px #555;
+	text-align: center;	
+}
+ul.nav-pills li {
+	margin-top: 5px;
+}
+#container {
+	background-color: #fff;
+	color: #222;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: 0px 0px 2px #555;
+	border: 1px solid #000;
+	border-radius: 12px;
+}
+#container > hr  {
+	margin: 30px 0;
+}
+#pageTitle {
+	width: 100%;
+	color: #333;
+	font-family: "Open Sans Condensed","Ubuntu","Trebuchet MS","Helvetica","Arial","FreeSans",sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #aaa;
+	text-align: center;
+}
+#content {
+	padding: 10px;
+}
+#container #footer {
+	width: 100%;
+	color: #aaa;
+	font-size: 10px;
+	text-align: center;
+}
+
+.paging {
+	width: 100%;
+	text-align: center;
+}
+.paging li a {
+	width: 39px;
+}
+@media screen and (max-width: 767px) {
+	#container {
+		border: none;
+		border-radius: 0;
+	}
+	.navbar { margin-bottom: 0;}
+	body { padding-bottom: 0;}
+}
+
+/* *************************************************************
+	INDEX RANDOM IMAGE
+************************************************************* */
+.featured-pokemon {
+	position: relative;
+	float: right;
+	margin: 20px;
+}
+.featured-pokemon h4 {
+	width: 100%;
+	text-align: center;
+	font-family: Georgia, serif;
+}
+
+/* *************************************************************
+	SEARCH RESULTS
+************************************************************* */
+.search-thumb-pokemon {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	padding: 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.search-thumb-types {
+	text-align: center;
+	font-size: 10px;
+	margin-top: 2px;
+	height: 21px;
+}
+.search-thumb-pokedex_no {
+	font-family: "Open Sans Condensed","Ubuntu","Trebuchet MS","Helvetica","Arial","FreeSans",sans-serif;
+	font-size: 11px;
+	text-align: center;
+	margin-top: 2px;
+	margin-bottom: 0;
+	color: #aaa;
+}
+.search-thumb-name
+{
+
+}
+.search-thumb-name h5 {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	height: 22px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	margin-top: 2px;
+	margin-bottom: 0;
+}
+.search-thumb-image {
+	
+}
+.search-summary-image-img {
+	padding: 5px;
+}
+
+.search-summary-pokemon {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	padding: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.search-summary-name
+{
+
+}
+.search-summary-name h5 {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	height: 22px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	margin-top: 2px;
+	margin-bottom: 0;
+}
+.search-summary-image {
+	
+}
+.search-summary-image-img {
+	padding: 5px;
+}
+
+/* *************************************************************
+	IMAGE UPLOAD PREVIEW
+************************************************************* */
+#preview-new-image {
+	display: none;
+}
+.preview-image-img {
+	max-width: 100%;
+}
+
+/* *************************************************************
+	VIEW PAGE
+************************************************************* */
+.stat-bar {
+	height:12px;
+	background-image:-webkit-linear-gradient(#c8c8c8,silver);
+	background-image:-moz-linear-gradient(#c8c8c8,silver);
+	background-image:-o-linear-gradient(#c8c8c8,silver);
+	background-image:linear-gradient(#c8c8c8,silver);
+	-webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.2);
+	box-shadow:inset 1px 1px 0 rgba(255,255,255,0.2);
+	border:1px solid #a6a6a6
+}
+.stat-bar-high {
+	border-color:#73a644;
+	background:#a4c93a;
+	background-image:-webkit-linear-gradient(#a4c93a,#89c04b);
+	background-image:-moz-linear-gradient(#a4c93a,#89c04b);
+	background-image:-o-linear-gradient(#a4c93a,#89c04b);
+	background-image:linear-gradient(#a4c93a,#89c04b)
+}
+
+.stat-bar-med {
+	border-color:#e0ac1d;
+	background:#fcd035;
+	background-image:-webkit-linear-gradient(#fcd035,#f3b517);
+	background-image:-moz-linear-gradient(#fcd035,#f3b517);
+	background-image:-o-linear-gradient(#fcd035,#f3b517);
+	background-image:linear-gradient(#fcd035,#f3b517)
+}
+
+.stat-bar-low {
+	border-color:#c72f06;
+	background:#e75832;
+	background-image:-webkit-linear-gradient(#e75832,#e33a0e);
+	background-image:-moz-linear-gradient(#e75832,#e33a0e);
+	background-image:-o-linear-gradient(#e75832,#e33a0e);
+	background-image:linear-gradient(#e75832,#e33a0e)
+}
+.stats-table {
+	font-size: 14px;
+}
+.stats-table-header {
+	text-align: right;
+	padding: 5px auto;
+}
+.stats-table-value {
+	padding: 5px 10px 5px 15px;
+}
+.view-types {
+	font-size: 10px;
+}
+.view-description {
+	font-size: 10px;
+}
+
+/* *************************************************************
+	ELEMENT
+************************************************************* */
+.element-type {
+	display: inline-block;
+	font-family: Lato, Ubuntu, 'Trebuchet MS', Helvetica, Arial, FreeSans, sans-serif;
+	width: 60px;
+	line-height: 1;
+	padding: 3px 0;
+	margin-bottom: 1px;
+	
+	background:#ccc;
+	background-image:-webkit-linear-gradient(#ddd,#bbb);
+	background-image:-moz-linear-gradient(#ddd,#bbb);
+	background-image:-o-linear-gradient(#ddd,#bbb);
+	background-image:linear-gradient(#ddd,#bbb);
+	
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 10px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #333;
+	text-transform: uppercase;
+}
+
+.type-small {
+	width: 45px;
+}
+
+.type-normal {
+	background:#8a8a59;
+	background-image:-webkit-linear-gradient(#a8a878,#8a8a59);
+	background-image:-moz-linear-gradient(#a8a878,#8a8a59);
+	background-image:-o-linear-gradient(#a8a878,#8a8a59);
+	background-image:linear-gradient(#a8a878,#8a8a59);
+	border-color:#79794e
+}
+
+.type-fire {
+	background:#f08030;
+	background-image:-webkit-linear-gradient(#f08030,#dd6610);
+	background-image:-moz-linear-gradient(#f08030,#dd6610);
+	background-image:-o-linear-gradient(#f08030,#dd6610);
+	background-image:linear-gradient(#f08030,#dd6610);
+	border-color:#b4530d
+}
+
+.type-water {
+	background:#6890f0;
+	background-image:-webkit-linear-gradient(#6890f0,#386ceb);
+	background-image:-moz-linear-gradient(#6890f0,#386ceb);
+	background-image:-o-linear-gradient(#6890f0,#386ceb);
+	background-image:linear-gradient(#6890f0,#386ceb);
+	border-color:#1753e3
+}
+
+.type-electric {
+	background:#f8d030;
+	background-image:-webkit-linear-gradient(#f8d030,#f0c108);
+	background-image:-moz-linear-gradient(#f8d030,#f0c108);
+	background-image:-o-linear-gradient(#f8d030,#f0c108);
+	background-image:linear-gradient(#f8d030,#f0c108);
+	border-color:#c19b07
+}
+
+.type-grass {
+	background:#78c850;
+	background-image:-webkit-linear-gradient(#78c850,#5ca935);
+	background-image:-moz-linear-gradient(#78c850,#5ca935);
+	background-image:-o-linear-gradient(#78c850,#5ca935);
+	background-image:linear-gradient(#78c850,#5ca935);
+	border-color:#4a892b
+}
+
+.type-ice {
+	background:#98d8d8;
+	background-image:-webkit-linear-gradient(#98d8d8,#69c6c6);
+	background-image:-moz-linear-gradient(#98d8d8,#69c6c6);
+	background-image:-o-linear-gradient(#98d8d8,#69c6c6);
+	background-image:linear-gradient(#98d8d8,#69c6c6);
+	border-color:#45b6b6
+}
+
+.type-fighting {
+	background:#c03028;
+	background-image:-webkit-linear-gradient(#c03028,#9d2721);
+	background-image:-moz-linear-gradient(#c03028,#9d2721);
+	background-image:-o-linear-gradient(#c03028,#9d2721);
+	background-image:linear-gradient(#c03028,#9d2721);
+	border-color:#82211b
+}
+
+.type-poison {
+	background:#a040a0;
+	background-image:-webkit-linear-gradient(#a040a0,#803380);
+	background-image:-moz-linear-gradient(#a040a0,#803380);
+	background-image:-o-linear-gradient(#a040a0,#803380);
+	background-image:linear-gradient(#a040a0,#803380);
+	border-color:#662966
+}
+
+.type-ground {
+	background:#e0c068;
+	background-image:-webkit-linear-gradient(#e0c068,#d4a82f);
+	background-image:-moz-linear-gradient(#e0c068,#d4a82f);
+	background-image:-o-linear-gradient(#e0c068,#d4a82f);
+	background-image:linear-gradient(#e0c068,#d4a82f);
+	border-color:#aa8623
+}
+
+.type-flying {
+	background:#a890f0;
+	background-image:-webkit-linear-gradient(#a890f0,#9180c4);
+	background-image:-moz-linear-gradient(#a890f0,#9180c4);
+	background-image:-o-linear-gradient(#a890f0,#9180c4);
+	background-image:linear-gradient(#a890f0,#9180c4);
+	border-color:#7762b6
+}
+
+.type-psychic {
+	background:#f85888;
+	background-image:-webkit-linear-gradient(#f85888,#f61c5d);
+	background-image:-moz-linear-gradient(#f85888,#f61c5d);
+	background-image:-o-linear-gradient(#f85888,#f61c5d);
+	background-image:linear-gradient(#f85888,#f61c5d);
+	border-color:#d60945
+}
+
+.type-bug {
+	background:#a8b820;
+	background-image:-webkit-linear-gradient(#a8b820,#8d9a1b);
+	background-image:-moz-linear-gradient(#a8b820,#8d9a1b);
+	background-image:-o-linear-gradient(#a8b820,#8d9a1b);
+	background-image:linear-gradient(#a8b820,#8d9a1b);
+	border-color:#616b13
+}
+
+.type-rock {
+	background:#b8a038;
+	background-image:-webkit-linear-gradient(#b8a038,#93802d);
+	background-image:-moz-linear-gradient(#b8a038,#93802d);
+	background-image:-o-linear-gradient(#b8a038,#93802d);
+	background-image:linear-gradient(#b8a038,#93802d);
+	border-color:#746523
+}
+
+.type-ghost {
+	background:#705898;
+	background-image:-webkit-linear-gradient(#705898,#554374);
+	background-image:-moz-linear-gradient(#705898,#554374);
+	background-image:-o-linear-gradient(#705898,#554374);
+	background-image:linear-gradient(#705898,#554374);
+	border-color:#413359
+}
+
+.type-dragon {
+	background:#7038f8;
+	background-image:-webkit-linear-gradient(#7038f8,#4c08ef);
+	background-image:-moz-linear-gradient(#7038f8,#4c08ef);
+	background-image:-o-linear-gradient(#7038f8,#4c08ef);
+	background-image:linear-gradient(#7038f8,#4c08ef);
+	border-color:#3d07c0
+}
+
+.type-steel {
+	background:#b8b8d0;
+	background-image:-webkit-linear-gradient(#b8b8d0,#9797ba);
+	background-image:-moz-linear-gradient(#b8b8d0,#9797ba);
+	background-image:-o-linear-gradient(#b8b8d0,#9797ba);
+	background-image:linear-gradient(#b8b8d0,#9797ba);
+	border-color:#7a7aa7
+}
+
+.type-dark {
+	background:#705848;
+	background-image:-webkit-linear-gradient(#705848,#513f34);
+	background-image:-moz-linear-gradient(#705848,#513f34);
+	background-image:-o-linear-gradient(#705848,#513f34);
+	background-image:linear-gradient(#705848,#513f34);
+	border-color:#362a23
+}
+
+.type-fairy {
+	background:#e898e8;
+	background-image:-webkit-linear-gradient(#e898e8,#de6ede);
+	background-image:-moz-linear-gradient(#e898e8,#de6ede);
+	background-image:-o-linear-gradient(#e898e8,#de6ede);
+	background-image:linear-gradient(#e898e8,#de6ede);
+	border-color:#d547d5
+}
+
+/* *************************************************************
+	ADVANCED SEARCH PAGE
+************************************************************* */
+.first-checkbox {
+	margin-left: 10px;
+}
+
+/* *************************************************************
+	MISC
+************************************************************* */
+.link-spanner { 
+	position:absolute; 
+	width:100%;
+	height:100%;
+	top:0;
+	left: 0;
+	z-index: 1;
+}
+p.error-label {
+	color: #EE0000;
+	text-align: left;
+}
+p.confirm-label {
+	color: #008500;
+}
+.grey-label {
+	color: #aaa;
+	font-weight: 500;
+}
+.checked {
+	color: #008500;
+}
+ul.feat-search-list {
+	list-style-type: none;
+	list-style-position: inside;
+	padding: 0;
+	margin: 0;
+}
+ul {
+	padding-left: 20px;
+}
+.pad-left-30 {
+	padding-left: 30px;
+}
